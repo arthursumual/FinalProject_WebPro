@@ -29,9 +29,9 @@ const Global = () => {
       <h1 >GLOBAL</h1>
       
       </div>
-      <ListGroup.Item>Positif : {corona.positif}</ListGroup.Item>
+      <ListGroup.Item><font color = {'red'}>Positif : {corona.positif}</font></ListGroup.Item>
 
-      <ListGroup.Item>Sembuh : {corona.sembuh}</ListGroup.Item>
+      <ListGroup.Item><font color = {'green'}>Sembuh : {corona.sembuh}</font></ListGroup.Item>
 
       <ListGroup.Item>Meninggal : {corona.meninggal}</ListGroup.Item>
      </ListGroup>

@@ -25,11 +25,11 @@ const Provinsi =()=> {
 
       <ListGroup.Item ><div className = "row justify-content-center"> <h5>{Item.provinsi}</h5></div> </ListGroup.Item>
 
-      <ListGroup.Item>Positif : {Item.kasusPosi}</ListGroup.Item>
+      <ListGroup.Item><font color = {'red'}>Positif : {Item.kasusPosi}</font></ListGroup.Item>
 
-      <ListGroup.Item>Sembuh : {Item.kasusSemb}</ListGroup.Item>
+      <ListGroup.Item><font color = {'green'}>Sembuh : {Item.kasusSemb}</font></ListGroup.Item>
 
-      <ListGroup.Item>Meninggal : {Item.kasusMeni}</ListGroup.Item>
+      <ListGroup.Item><font color = {'black'}>Meninggal : {Item.kasusMeni}</font></ListGroup.Item>
 
      </ListGroup>
    </Card>

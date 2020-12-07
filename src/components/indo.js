@@ -27,9 +27,9 @@ const Indo =()=> {
       
     </div>
       
-      <ListGroup.Item>Positif : {indonesia.positif}</ListGroup.Item>
+      <ListGroup.Item><font color = {'red'}>Positif : {indonesia.positif}</font></ListGroup.Item>
 
-      <ListGroup.Item>Sembuh : {indonesia.sembuh}</ListGroup.Item>
+      <ListGroup.Item><font color = {'green'}>Sembuh : {indonesia.sembuh}</font></ListGroup.Item>
 
       <ListGroup.Item>Meninggal : {indonesia.meninggal}</ListGroup.Item>
      </ListGroup>
