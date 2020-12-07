@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import {ListGroup, Card} from 'react-bootstrap'
 
 const Global = () => {
   const [corona, setCorona] = useState({ positif: NaN, meninggal: NaN, sembuh: NaN })
@@ -19,12 +20,22 @@ const Global = () => {
   });
 
   return (
-    <div>
+    
+
+    <Card bg = "secondary" style={{ width: '20rem', paddingRight: '0.25rem', paddingLeft: '0.25rem', paddingTop: '0.10rem' }}>
+      <ListGroup variant="flush">
+      <div className = "row justify-content-center" >
       
-      <h2>confirm {corona.positif}</h2>
-      <h2>sembuh {corona.sembuh}</h2>
-      <h2>meninggal {corona.meninggal}</h2>
-    </div>
+      <h1 >GLOBAL</h1>
+      
+      </div>
+      <ListGroup.Item>Positif : {corona.positif}</ListGroup.Item>
+
+      <ListGroup.Item>Sembuh : {corona.sembuh}</ListGroup.Item>
+
+      <ListGroup.Item>Meninggal : {corona.meninggal}</ListGroup.Item>
+     </ListGroup>
+   </Card>
   );
 }
 

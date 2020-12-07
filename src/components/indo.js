@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import {ListGroup, Card} from 'react-bootstrap'
 
 const Indo =()=> {
   const [indonesia, setIndonesia] = useState({ positif: NaN, meninggal: NaN, sembuh: NaN })
@@ -18,12 +19,22 @@ const Indo =()=> {
       .catch((err) => console.log(err))
   })
   return (
-    <div>
+    <Card bg = "secondary" style={{ width: '20rem', paddingRight: '0.25rem', paddingLeft: '0.25rem', paddingTop: '0.10rem' }}>
+      <ListGroup variant="flush">
+      <div className = "row justify-content-center">
       
-      <h2>confirm {indonesia.positif}</h2>
-      <h2>sembuh {indonesia.sembuh}</h2>
-      <h2>meninggal {indonesia.meninggal}</h2>
+      <h1>INDONESIA</h1>
+      
     </div>
+      
+      <ListGroup.Item>Positif : {indonesia.positif}</ListGroup.Item>
+
+      <ListGroup.Item>Sembuh : {indonesia.sembuh}</ListGroup.Item>
+
+      <ListGroup.Item>Meninggal : {indonesia.meninggal}</ListGroup.Item>
+     </ListGroup>
+   </Card>
+    
   );
 }
 

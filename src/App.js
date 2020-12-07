@@ -9,7 +9,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div >
-        <nav><Navbar bg="light" expand="lg">
+        <nav><Navbar bg="info" expand="lg">
           <Navbar.Brand href="#home"><b>COVID TRACKER</b></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
