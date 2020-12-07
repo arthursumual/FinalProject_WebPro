@@ -19,7 +19,7 @@ const Indo =()=> {
   })
   return (
     <div>
-      indo
+      
       <h2>confirm {indonesia.positif}</h2>
       <h2>sembuh {indonesia.sembuh}</h2>
       <h2>meninggal {indonesia.meninggal}</h2>

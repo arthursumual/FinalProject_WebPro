@@ -10,28 +10,18 @@ const App = () => {
     <BrowserRouter>
       <div >
         <nav><Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home">Covid Tracker</Navbar.Brand>
+          <Navbar.Brand href="#home"><b>COVID TRACKER</b></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#home">Global</Nav.Link>
-              <Nav.Link href="#link">Indonesia</Nav.Link>
-              <Nav.Link href="#ling">Provinsi</Nav.Link>
-              
+              <Nav.Link href="/">Global</Nav.Link>
+              <Nav.Link href="/indonesia">Indonesia</Nav.Link>
+              <Nav.Link href="/provinsi">Provinsi</Nav.Link>  
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-          <ul>
-            <li>
-              <Link to='/'>Global</Link>
-            </li>
-            <li>
-              <Link to='/indonesia'>Indonesia</Link>
-            </li>
-            <li>
-              <Link to='/provinsi'>Provinsi</Link>
-            </li>
-          </ul>
+          
+            
         </nav>
         <Switch>
           <Route exact path='/' component={global} />
