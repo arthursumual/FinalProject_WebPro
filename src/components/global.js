@@ -26,7 +26,7 @@ const Global = () => {
       <ListGroup variant="flush">
       <div className = "row justify-content-center" >
       
-      <h1 >GLOBAL</h1>
+      <h1 >DUNIA</h1>
       
       </div>
       <ListGroup.Item><font color = {'red'}>Positif : {corona.positif}</font></ListGroup.Item>

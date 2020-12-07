@@ -14,7 +14,7 @@ const App = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/">Global</Nav.Link>
+              <Nav.Link href="/">Dunia</Nav.Link>
               <Nav.Link href="/indonesia">Indonesia</Nav.Link>
               <Nav.Link href="/provinsi">Provinsi</Nav.Link>  
             </Nav>
