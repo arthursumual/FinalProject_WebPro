@@ -23,7 +23,7 @@ const Provinsi =()=> {
     <Card bg = "secondary" style={{ width: '20rem', paddingRight: '0.25rem', paddingLeft: '0.25rem', paddingTop: '0.10rem' }}>
       <ListGroup variant="flush">
 
-      <ListGroup.Item ><div className = "row justify-content-center"> <h5>{Item.provinsi}</h5></div> </ListGroup.Item>
+      <Card.Header ><div className = "row justify-content-center"> <h5>{Item.provinsi}</h5></div> </Card.Header>
 
       <ListGroup.Item><font color = {'red'}>Positif : {Item.kasusPosi}</font></ListGroup.Item>
 
